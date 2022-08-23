@@ -1,0 +1,12 @@
+root folder
+    css folder
+        style.css (mpf.css, position.css , flexbox.css)
+    index.html
+
+    photopea.com (online editior, color finder)
+
+    fonts.google.com 
+
+    cssgradient.com
+
+    

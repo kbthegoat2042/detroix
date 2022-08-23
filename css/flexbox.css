@@ -1,0 +1,149 @@
+/* 
+colors
+
+    primary=> #131c29
+    secondary=> #ff8901
+    link color=> #f596573
+    top gradient=> #33597e
+    bottom gradient=> #0f1721
+    footer=> #0b1016
+    btn-color=> #213349
+    date1=> #be8442
+    date2=> #be6142
+    date3=> #bd425f
+    body color=> #f3f4f6
+
+fonts
+
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;      
+*/
+
+/* how to create variables for styling ["var()"] */
+
+:root {
+    --prim: #131c29;
+    --sec: #ff8901;
+    --btnColor: #213349;
+    --footerColor: #0b1016;
+    --primFont: 'Oswald', sans-serif;
+    --secFont: 'Roboto', sans-serif;
+}
+
+/* generic rules first (box-sizing, body[m0/p0 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    color: var(--sec);
+}
+
+.inner{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-section {
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--prim);
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.top-section .inner {
+    font-family: var(--secFont);
+    font-size: 10px;
+    text-transform: uppercase;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 0;
+    padding: 0;
+}
+
+.top-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.top-list-item {
+    display: inline;
+    padding: 0 5px; /* values */
+    border-right: 1px solid #596573;
+}
+
+.top-list-item:last-child {
+    border: none;
+}
+
+.demolink, .top-list-item a {
+    color: #596573;
+}
+
+.top-list-item a:hover {
+    color: var(--sec);
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid orange; */
+}
+
+.bottom-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.bottom-list-item {
+    display: inline;
+    padding: 10px 15px;
+    font-family: var(--primFont);
+    text-transform: uppercase;
+    background-color: var(--prim);
+    border-radius: 5px;
+}
+
+.bottom-list-item:hover {
+    background-color: var(--sec);
+    transition: 0.8s;
+}
+
+.bottom-list-item a {
+    color: white;
+}
+
+.bottom-list-item a:hover {
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 10px;
+}
